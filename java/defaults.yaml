@@ -1,0 +1,18 @@
+Defaults:
+  provider: oracle
+
+  openjdk:
+    version: 8
+    repo: deb http://ppa.launchpad.net/openjdk-r/ppa/ubuntu
+    repo_list_file: /etc/apt/sources.list.d/openjdk.list
+    repo_key_server: keyserver.ubuntu.com
+    repo_key_id: 86F44E2A
+
+  java:
+    oracle:
+      pkg: oracle-java8-installer
+      repo: deb http://ppa.launchpad.net/webupd8team/java/ubuntu
+      repo_list_file: /etc/apt/sources.list.d/java8.list
+      repo_key_server: keyserver.ubuntu.com
+      repo_key_id: EEA14886
+

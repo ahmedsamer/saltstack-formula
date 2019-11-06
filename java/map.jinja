@@ -1,0 +1,8 @@
+{% import_yaml "java/defaults.yaml" as java with context %}
+
+{% set java = salt['grains.filter_by'](
+  java,
+  default='Defaults',
+  grain='os',
+  merge=salt['pillar.get']('java'))
+%}
